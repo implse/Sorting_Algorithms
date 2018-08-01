@@ -15,3 +15,13 @@ For sorting N items we have to make Log(N!) comparaisons. With stringling formul
 - N log(N) time complexity is the lower bound for comparaison based sorting algorithms.
 
 - We can achieve O(N) running time as far as sorting is concerned with non comparaison based algorithms.(Bucket Sort or Radix Sort)
+
+## Bubble Sort
+
+Repeatedly steps through the list to be sorted, compare each pair of adjacent items and swaps them if they are in the wrong order.
+
+Time Complexity : O(N^2)
+
+Bubble Sort has worst-case and average complexity both O(N^2). It it not a practical sorting algorithm.
+
+In-place algorithm.
