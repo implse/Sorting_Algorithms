@@ -7,7 +7,7 @@ class TestBubbleSort(unittest.TestCase):
 
     def test_BubbleSort(self):
         sorted = bubble_sort(self.data_1)
-        print(sorted)
+
         self.assertEqual(self.data_1[0], 1)
         self.assertEqual(self.data_1[1], 2)
         self.assertEqual(self.data_1[2], 3)
