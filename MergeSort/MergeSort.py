@@ -32,9 +32,3 @@ def merge_sort(data):
         data[k] = right_half[j]
         k = k + 1
         j = j + 1
-
-# Test
-
-m = [6, 1, 5, 10, 3, 9, 2, 4, 8, 7]
-merge_sort(m)
-print(m)

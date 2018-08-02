@@ -39,8 +39,11 @@ Merge Sort is a divide and conquer algorithm that was invented by John Von Neuma
 Time Complexity : N log(N)
 
 1 - Divide the array into two sub arrays recursively.
+
 2 - Sort these sub arrays recursively with Merge Sort again.
+
 3 - If there is only a single item left in the sub array, we consider it to be sorted by definition.
+
 4 - Merge the sub array to get the final sorted array.
 
 - Often implement recursively.
