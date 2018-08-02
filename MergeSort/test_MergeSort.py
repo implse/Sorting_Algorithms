@@ -1,14 +1,14 @@
 import unittest
 import random
-from BubbleSort import bubble_sort
+from MergeSort import merge_sort
 
-class TestBubbleSort(unittest.TestCase):
+class TestMergeSort(unittest.TestCase):
     def setUp(self):
         self.data_1 = [x for x in range(1, 11)]
         random.shuffle(self.data_1)
 
-    def test_BubbleSort(self):
-        sorted = bubble_sort(self.data_1)
+    def test_MergeSort(self):
+        merge_sort(self.data_1)
 
         self.assertEqual(self.data_1[0], 1)
         self.assertEqual(self.data_1[1], 2)
