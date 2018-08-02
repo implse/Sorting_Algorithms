@@ -25,3 +25,22 @@ Time Complexity : O(N^2)
 Bubble Sort has worst-case and average complexity both O(N^2). It it not a practical sorting algorithm.
 
 In-place algorithm.
+
+## Merge Sort
+
+Merge Sort is a divide and conquer algorithm that was invented by John Von Neumann in 1945.
+
+- Comparaison algorithm and stable sorting.
+
+- Not in place algorithm.
+
+- Merge sort is often the best choice for sorting a linked list.
+
+Time Complexity : N log(N)
+
+1 - Divide the array into two sub arrays recursively.
+2 - Sort these sub arrays recursively with Merge Sort again.
+3 - If there is only a single item left in the sub array, we consider it to be sorted by definition.
+4 - Merge the sub array to get the final sorted array.
+
+- Often implement recursively.
