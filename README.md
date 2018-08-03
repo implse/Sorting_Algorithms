@@ -47,3 +47,26 @@ Time Complexity : N log(N)
 4 - Merge the sub array to get the final sorted array.
 
 - Often implement recursively.
+
+## Quick Sort
+
+
+- Quick Sort is an efficient sorting algorithm.
+
+- It is a divide and conquer algorithm.
+
+- Often implement recursively.
+
+-  It is still a commonly used algorithm for sorting.
+
+When implemented well, it can be about two or three times faster than its main competitors, Merge Sort and Heap Sort.
+
+It was developed by Tony Hoare in 1959.
+
+Time Complexity : N log(N)
+
+Not Stable. Does not keep the relative order of items with equal value.
+
+In place, does not need any additional memory.
+
+Quick Sort gained widespread adoption, appearing, for example, in Unix as the default library sort subroutine. Hence, it lent its name to the C standard library subroutine qsort and in the reference implementation of Java.
