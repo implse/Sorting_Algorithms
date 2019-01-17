@@ -1,4 +1,4 @@
-# MergeSort - O(N log(N))
+# MergeSort : Time Complexity O(n log(n))
 
 def merge_sort(data):
     if len(data) == 1:

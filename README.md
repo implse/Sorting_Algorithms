@@ -70,3 +70,15 @@ Not Stable. Does not keep the relative order of items with equal value.
 In place, does not need any additional memory.
 
 Quick Sort gained widespread adoption, appearing, for example, in Unix as the default library sort subroutine. Hence, it lent its name to the C standard library subroutine qsort and in the reference implementation of Java.
+
+## Selection sort
+
+The algorithm divides the input list into two parts:
+  - The sub-array of items already sorted.
+  - The sub-array of items remaining to be sorted that occupy the rest of the array.
+
+The algorithm proceeds by finding the smallest element in the unsorted sub-array.
+
+It is an in place algorithm. (no need for extra memory)
+
+Does not preserve the order of keys with equal values. (Not a stable sort)

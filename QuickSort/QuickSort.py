@@ -1,4 +1,4 @@
-# Quick Sort
+# Quick Sort : Time Complexity O(n log(n))
 
 def quick_sort(data, low, high):
     if low >= high:
