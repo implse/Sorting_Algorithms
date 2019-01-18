@@ -20,7 +20,7 @@ For sorting N items we have to make Log(N!) comparaisons. With stringling formul
 
 Repeatedly steps through the list to be sorted, compare each pair of adjacent items and swaps them if they are in the wrong order.
 
-Time Complexity : O(N^2)
+__Bubble Sort Time Complexity : O(N^2)__
 
 Bubble Sort has worst-case and average complexity both O(N^2). It it not a practical sorting algorithm.
 
@@ -30,13 +30,13 @@ In-place algorithm.
 
 Merge Sort is a divide and conquer algorithm that was invented by John Von Neumann in 1945.
 
-- Comparaison algorithm and stable sorting.
+- Comparison algorithm and stable sorting.
 
 - Not in place algorithm.
 
 - Merge sort is often the best choice for sorting a linked list.
 
-Time Complexity : N log(N)
+__Time Complexity : N log(N)__
 
 1 - Divide the array into two sub arrays recursively.
 
@@ -50,7 +50,6 @@ Time Complexity : N log(N)
 
 ## Quick Sort
 
-
 - Quick Sort is an efficient sorting algorithm.
 
 - It is a divide and conquer algorithm.
@@ -63,7 +62,7 @@ When implemented well, it can be about two or three times faster than its main c
 
 It was developed by Tony Hoare in 1959.
 
-Time Complexity : N log(N)
+__Time Complexity : N log(N)__
 
 Not Stable. Does not keep the relative order of items with equal value.
 
@@ -82,3 +81,5 @@ The algorithm proceeds by finding the smallest element in the unsorted sub-array
 It is an in place algorithm. (no need for extra memory)
 
 Does not preserve the order of keys with equal values. (Not a stable sort)
+
+__Time Complexity : O(N^2)__
