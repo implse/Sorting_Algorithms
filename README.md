@@ -11,10 +11,10 @@ A sorting algorithm is an algorithm that puts elements of an array in a certain 
 
 ### Lower Bound
 
-For sorting N items we have to make Log(N!) comparaisons. With stringling formula it can be reduced to N log(N).
-- N log(N) time complexity is the lower bound for comparaison based sorting algorithms.
+For sorting N items we have to make Log(N!) comparisons. With stringling formula it can be reduced to N log(N).
+- N log(N) time complexity is the lower bound for comparison based sorting algorithms.
 
-- We can achieve O(N) running time as far as sorting is concerned with non comparaison based algorithms.(Bucket Sort or Radix Sort)
+- We can achieve O(N) running time as far as sorting is concerned with non comparison based algorithms.(Bucket Sort or Radix Sort)
 
 ## Bubble Sort
 
