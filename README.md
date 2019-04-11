@@ -20,7 +20,7 @@ For sorting N items we have to make Log(N!) comparisons. With stringling formula
 
 Repeatedly steps through the list to be sorted, compare each pair of adjacent items and swaps them if they are in the wrong order.
 
-__Bubble Sort Time Complexity : O(N^2)__
+__Time Complexity : O(N^2)__
 
 Bubble Sort has worst-case and average complexity both O(N^2). It it not a practical sorting algorithm.
 
