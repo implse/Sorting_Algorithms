@@ -1,5 +1,5 @@
 # Time Complexity O(n^2) / Space Complexity O(1)
-def insertionSort(array):
+def insertion_Sort(array):
     for i in range(1, len(array)):
         j = i
         while j > 0 and array[j] < array[j - 1]:
