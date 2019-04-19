@@ -1,5 +1,5 @@
 # Heap Sort Time O(n log n) / Space O(1)
-def heap_Sort(array):
+def heapSort(array):
     # Build Max Heap from input
     buildMaxHeap(array)
     for endIdx in reversed(range(1, len(array))):
