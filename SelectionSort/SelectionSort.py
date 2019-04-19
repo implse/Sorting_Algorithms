@@ -1,5 +1,4 @@
 # Selection Sort : Time Complexity O(n^2)  / Space Complexity O(1) Space
-
 def selection_sort(data):
     for i in range(len(data) - 1):
         smallestIdx = i
