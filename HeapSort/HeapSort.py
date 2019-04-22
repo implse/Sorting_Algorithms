@@ -7,7 +7,7 @@ def heapSort(array):
         sifDown(0, endIdx - 1, array)
     return array
 
-def swap(i, j,  array):
+def swap(i, j, array):
     array[i], array[j] = array[j], array[i]
 
 def buildMaxHeap(array):

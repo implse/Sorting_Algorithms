@@ -1,25 +1,29 @@
-# Quick Sort : Time Complexity O(n log(n))
-def quick_sort(data, low, high):
-    if low >= high:
-        return
-    pivot_index = partition(data, low, high)
-    quick_sort(data, low, pivot_index - 1)
-    quick_sort(data, pivot_index + 1, high)
+# Quick Sort : Time Complexity O(n log(n)) / Space Complexity O(log(n))
+def quickSort(array):
+	quicksortHelper(array, 0, len(array) - 1)
+	return array
 
-def partition(data, low, high):
+def quicksortHelper(array, low, high):
+	# Base case
+	if low >= high:
+		return
+	# Pivot
+	pivotIdx = partition(array, low, high)
+	# Recursive call left
+	quicksortHelper(array, low, pivotIdx - 1)
+	# Recursive call right
+	quicksortHelper(array, pivotIdx + 1, high)
 
-    pivot_index = (low + high) // 2
-    swap(data, pivot_index, high)
+def partition(array, low, high):
+	pivotIdx = (low + high) // 2
+	swap(array, pivotIdx, high)
+	i = low
+	for j in range(low, high, 1):
+		if array[j] <= array[high]:
+			swap(array, i, j)
+			i += 1
+	swap(array, i, high)
+	return i
 
-    i = low
-
-    for j in range(low, high, 1):
-        if data[j] <= data[high]:
-            swap(data, i, j)
-            i = i + 1
-    swap(data, i, high)
-
-    return i
-
-def swap(data, i, j):
-    data[i], data[j] = data[j], data[i]
+def swap(array, i, j):
+	array[i], array[j] = array[j], array[i]
