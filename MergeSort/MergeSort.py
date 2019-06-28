@@ -1,32 +1,37 @@
 # MergeSort : Time Complexity O(n log(n))
-def merge_sort(data):
-    # Base Case
-    if len(data) == 1:
-        return
-    middle_index = len(data) // 2
+def mergeSort(array):
+    if len(array) == 1:
+        return array
     # Divide
-    left_half = data[:middle_index]
-    right_half = data[middle_index:]
-    # Recursive Divide
-    merge_sort(left_half)
-    merge_sort(right_half)
+    middleIdx = len(array) // 2
+    leftHalf = array[:middleIdx]
+    rightHalf = array[middleIdx:]
+    # Recursive Calls
+    left_sorted = mergeSort(leftHalf)
+    right_sorted = mergeSort(rightHalf)
     # Merge
-    i = 0
-    j = 0
-    k = 0
-    while i < len(left_half) and j < len(right_half):
-        if left_half[i] < right_half[j]:
-            data[k] = left_half[i]
-            i +=  1
+    merge_result = mergeSortArray(left_sorted, right_sorted)
+    return merge_result
+
+def mergeSortArray(leftHalf, rightHalf):
+    ln_leftHalf = len(leftHalf)
+    ln_rightHalf = len(rightHalf)
+    sortedArray = [None for _ in range(ln_leftHalf + ln_rightHalf)]
+    k = i = j = 0
+    while i < ln_leftHalf and j < ln_rightHalf:
+        if leftHalf[i] <= rightHalf[j]:
+            sortedArray[k] = leftHalf[i]
+            i += 1
         else:
-            data[k] = right_half[j]
+            sortedArray[k] = rightHalf[j]
             j += 1
         k += 1
-    while i < len(left_half):
-        data[k] = left_half[i]
-        k += 1
+    while i < ln_leftHalf:
+        sortedArray[k] = leftHalf[i]
         i += 1
-    while j < len(right_half):
-        data[k] = right_half[j]
         k += 1
+    while j < ln_rightHalf:
+        sortedArray[k] = rightHalf[j]
         j += 1
+        k += 1
+    return sortedArray
