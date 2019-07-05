@@ -1,4 +1,4 @@
-# Quick Sort : Time Complexity O(n log(n)) / Space Complexity O(log(n))
+ # Quick Sort : Time Complexity O(n log(n)) / Space Complexity O(log(n))
 
 # Main Function
 def quickSort(array):
@@ -19,15 +19,18 @@ def quicksortHelper(array, low, high):
 
 # Partition Function : partition the array around the pivot
 def partition(array, low, high):
-	# Choose a pivot in the middle index
+	# Choosing a pivot in the middle
 	pivotIdx = (low + high) // 2
+	# Swap pivot with last value in the array
 	swap(array, pivotIdx, high)
 	i = low
 	for j in range(low, high):
 		if array[j] <= array[high]:
 			swap(array, i, j)
 			i += 1
+	# Moving the pivot at the right place
 	swap(array, i, high)
+	# Return the pivot index
 	return i
 
 # Swap Function
