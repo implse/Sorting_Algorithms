@@ -93,4 +93,13 @@ __Time Complexity : O(N^2)__
 right to left from LSD.
 - Radix Sort is a non-comparison sort.
 
+#### Most Significant Digit - MSD
+
+Radix Sort works by processing an integer or integer representation starting from the greatest digit, and moving towards the least significant digit. This method is usually solved by recursion.
+
+#### Least Significant Digit - LSD
+
+Radix Sort works by processing the least significant (smallest) digit first, and moving towards the greater, move significant digit as it continue to sort. This method is usually solved iteratively, using counting sort or bucket sort iternally.
+
+
 __Time Complexity : O(N)__
