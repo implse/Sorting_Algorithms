@@ -103,3 +103,11 @@ Radix Sort works by processing the least significant (smallest) digit first, and
 
 
 __Time Complexity : O(N)__
+
+
+- Takes numbers in an input list.
+- Passes through each digit in those numbers, from least to most significant.
+- Looks at the values of those digits.
+- Buckets the input list according to those digits.
+- Renders the results from that bucketing.
+- Repeats this process until the list is sorted.
