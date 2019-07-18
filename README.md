@@ -86,6 +86,8 @@ __Time Complexity : O(N^2)__
 
 ## Radix Sort
 
+Radix sort is an integer sorting algorithm that sorts data with integer keys by grouping the keys by individual digits that share the same significant position and value (place value)
+
 - Radix Sort has two variants :
   - MSD : Most Significant Digit
   - LSD : Least Significant Digit
@@ -111,3 +113,8 @@ Pseudo Code :
   - Buckets the input list according to those digits.
   - Renders the results from that bucketing.
   - Repeats this process until the list is sorted.
+
+## Counting Sort
+
+Counting sort is an efficient algorithm for sorting an array of positive integer. It is an integer sorting algorithm.
+The ability to perform integer arithmetic on the keys allows integer sorting algorithms to be faster than comparison sorting algorithms in many cases.
