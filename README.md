@@ -101,7 +101,7 @@ Radix Sort works by processing an integer or integer representation starting fro
 
 #### Least Significant Digit - LSD
 
-Radix Sort works by processing the least significant (smallest) digit first, and moving towards the greater, move significant digit as it continue to sort. This method is usually solved iteratively, using counting sort or bucket sort iternally.
+Radix Sort works by processing the least significant (smallest) digit first, and moving towards the greater, move significant digit as it continue to sort. This method is usually solved iteratively, using counting sort or bucket sort internally.
 
 
 __Time Complexity : O(N)__
