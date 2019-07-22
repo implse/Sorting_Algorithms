@@ -5,7 +5,7 @@ def counting_sort(array):
     being_sorted = [0 for _ in range(len(array))]
     frequency = [0 for _ in range(maximum + 1)]
 
-    # Counts the number of occurences of each digit in input array
+    # Counts the number of occurrences of each digit in the input array
     for i in range(len(array)):
         index = array[i]
         frequency[index] += 1

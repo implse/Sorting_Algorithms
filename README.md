@@ -117,4 +117,20 @@ Pseudo Code :
 ## Counting Sort
 
 Counting sort is an efficient algorithm for sorting an array of positive integer. It is an integer sorting algorithm.
+
 The ability to perform integer arithmetic on the keys allows integer sorting algorithms to be faster than comparison sorting algorithms in many cases.
+
+Counting sort is an integer sorting algorithm. Values must be integers.
+
+Counting sort is not a comparison based sorting algorithm, so linearithmic running time can be reduced.
+
+
+
+It operates by counting the number of occurrences of each digit in the input array.
+
+__Time Complexity : O(N + K)__
+
+N : number of items we want to sort.
+K : difference between the maximum and minimum values.
+
+Only suitable if the variation in keys is not significantly greater than the number of items.
