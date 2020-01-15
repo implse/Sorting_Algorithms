@@ -1,4 +1,4 @@
-# Time O(n + k)
+ # Time O(n + k)
 def counting_sort(array):
     # Find max value (k)
     maximum = max(array)
@@ -24,5 +24,6 @@ def counting_sort(array):
 
 
 a = [9, 3, 1, 4, 5, 7, 7, 2, 2]
-a = [9, 4, 1, 7, 9, 1, 2, 0]
+b = [9, 4, 1, 7, 9, 1, 2, 0]
 print(counting_sort(a))
+print(counting_sort(b))

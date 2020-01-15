@@ -3,24 +3,24 @@
 A sorting algorithm is an algorithm that puts elements of an array in a certain order.
 
 ### Features:
-- In place: strictly an in-place sort algorithm needs only O(1) memory beyond the items being sorted.(no needs for extra memory)
+- In place: strictly an in-place sort algorithm needs only `O(1)` memory beyond the items being sorted. (no needs for extra memory)
 
-- Recursive: some sorting algorithm are implemented in a recursive manner.(Dive and Conquer)
+- Recursive: some sorting algorithm are implemented in a recursive manner. (Divide and Conquer)
 
 - Stable: stable sorting algorithms maintain the relative order of records with equal values.
 
 ### Lower Bound
 
-For sorting N items we have to make Log(N!) comparisons. With stringling formula it can be reduced to N log(N).
+For sorting N items we have to make `Log(N!)` comparisons. With Stirling's formula (Stirling's approximation) it can be reduced to `N log(N)`.
 - N log(N) time complexity is the lower bound for comparison based sorting algorithms.
 
-- We can achieve O(N) running time as far as sorting is concerned with non comparison based algorithms.(Bucket Sort or Radix Sort)
+- We can achieve `O(N)` running time as far as sorting is concerned with non comparison based algorithms.(Bucket Sort or Radix Sort)
 
 ## Bubble Sort
 
 Repeatedly steps through the list to be sorted, compare each pair of adjacent items and swaps them if they are in the wrong order.
 
-__Time Complexity : O(N^2)__
+`Time Complexity : O(N^2)`
 
 Bubble Sort has worst-case and average complexity both O(N^2). It it not a practical sorting algorithm.
 
@@ -36,7 +36,7 @@ Merge Sort is a divide and conquer algorithm that was invented by John Von Neuma
 
 - Merge sort is often the best choice for sorting a linked list.
 
-__Time Complexity : N log(N)__
+`Time Complexity : N log(N)`
 
 1 - Divide the array into two sub arrays recursively.
 
@@ -62,7 +62,7 @@ When implemented well, it can be about two or three times faster than its main c
 
 It was developed by Tony Hoare in 1959.
 
-__Time Complexity : N log(N)__
+`Time Complexity : N log(N)`
 
 Not Stable. Does not keep the relative order of items with equal value.
 
@@ -82,7 +82,7 @@ It is an in place algorithm. (no need for extra memory)
 
 Does not preserve the order of keys with equal values. (Not a stable sort)
 
-__Time Complexity : O(N^2)__
+`Time Complexity : O(N^2)`
 
 ## Radix Sort
 
@@ -104,7 +104,7 @@ Radix Sort works by processing an integer or integer representation starting fro
 Radix Sort works by processing the least significant (smallest) digit first, and moving towards the greater, move significant digit as it continue to sort. This method is usually solved iteratively, using counting sort or bucket sort internally.
 
 
-__Time Complexity : O(N)__
+`Time Complexity : O(N)`
 
 Pseudo Code :
   - Takes numbers in an input list.
@@ -120,7 +120,7 @@ Counting sort is an efficient algorithm for sorting an array of positive integer
 
 The ability to perform integer arithmetic on the keys allows integer sorting algorithms to be faster than comparison sorting algorithms in many cases.
 
-Counting sort is an integer sorting algorithm. Values must be integers.
+Counting sort is an integer sorting algorithm. Values must be integers or integers string representation.
 
 Counting sort is not a comparison based sorting algorithm, so linearithmic running time can be reduced.
 
@@ -128,9 +128,16 @@ Counting sort is not a comparison based sorting algorithm, so linearithmic runni
 
 It operates by counting the number of occurrences of each digit in the input array.
 
-__Time Complexity : O(N + K)__
+`Time Complexity : O(N + K)`
 
 N : number of items we want to sort.
 K : difference between the maximum and minimum values.
 
 Only suitable if the variation in keys is not significantly greater than the number of items.
+
+
+## Cocktail Shaker Sort
+
+Cocktail shaker sort also known as bidirectional bubble sort is a variation of bubble sort that is both a stable sorting algorithm and a comparison sort. the algorithm differs from a bubble sort in that it sorts in both directions on each pass through the list.
+
+`Time Complexity : O(N^2)`
