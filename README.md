@@ -125,7 +125,6 @@ Counting sort is an integer sorting algorithm. Values must be integers or intege
 Counting sort is not a comparison based sorting algorithm, so linearithmic running time can be reduced.
 
 
-
 It operates by counting the number of occurrences of each digit in the input array.
 
 `Time Complexity : O(N + K)`
@@ -141,3 +140,11 @@ Only suitable if the variation in keys is not significantly greater than the num
 Cocktail shaker sort also known as bidirectional bubble sort is a variation of bubble sort that is both a stable sorting algorithm and a comparison sort. the algorithm differs from a bubble sort in that it sorts in both directions on each pass through the list.
 
 `Time Complexity : O(N^2)`
+
+
+## Tim Sort
+
+Tim Sort is a sorting algorithm based on Insertion Sort and Merge Sort.
+
+Tim Sort is a very fast `O(N log(N))` stable sorting algorithm. It is one of the best sorting algorithm
+in terms of complexity and stability.

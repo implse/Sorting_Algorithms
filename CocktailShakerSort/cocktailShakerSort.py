@@ -17,7 +17,6 @@ def cocktail_shaker(array):
 
         # Comparison from Right to Left
         for j in reversed(range(start - 1, end - 1)):
-            print(array)
             if array[j] > array[j + 1]:
                 swap(j, j + 1, array)
                 isSorted = False
