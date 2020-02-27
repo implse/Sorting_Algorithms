@@ -144,7 +144,13 @@ Cocktail shaker sort also known as bidirectional bubble sort is a variation of b
 
 ## Tim Sort
 
-Tim Sort is a sorting algorithm based on Insertion Sort and Merge Sort.
+Tim Sort is a sorting algorithm based on Insertion Sort and Merge Sort along with some internal logic to optimze the manipulation of large scale data.
 
 Tim Sort is a very fast `O(N log(N))` stable sorting algorithm. It is one of the best sorting algorithm
 in terms of complexity and stability.
+
+Tim Sort is an hybrid algorithm, an efficient combination of a number of other algorithms.
+
+- A particular algorithm is used to split the input array into sub-arrays.
+- Each sub-array is sorted with a simple Insertion Sort.
+- The sorted sub array are merge into one array with the use of Merge Sort.
