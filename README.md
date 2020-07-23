@@ -22,7 +22,7 @@ Repeatedly steps through the list to be sorted, compare each pair of adjacent it
 
 `Time Complexity : O(N^2)`
 
-Bubble Sort has worst-case and average complexity both O(N^2). It it not a practical sorting algorithm.
+Bubble Sort has worst-case and average complexity both `O(N^2)`. It it not a practical sorting algorithm.
 
 In-place algorithm.
 
@@ -129,8 +129,8 @@ It operates by counting the number of occurrences of each digit in the input arr
 
 `Time Complexity : O(N + K)`
 
-N : number of items we want to sort.
-K : difference between the maximum and minimum values.
+`N` : number of items we want to sort.
+`K` : difference between the maximum and minimum values.
 
 Only suitable if the variation in keys is not significantly greater than the number of items.
 
@@ -150,6 +150,8 @@ Tim Sort is a very fast `O(N log(N))` stable sorting algorithm. It is one of the
 in terms of complexity and stability.
 
 Tim Sort is an hybrid algorithm, an efficient combination of a number of other algorithms.
+
+The algorithm finds subsequences of the data that are already ordered (runs) and uses them to sort the remainder more efficiently.
 
 - A particular algorithm is used to split the input array into sub-arrays.
 - Each sub-array is sorted with a simple Insertion Sort.
