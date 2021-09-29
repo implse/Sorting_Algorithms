@@ -1,7 +1,16 @@
 # Sorting Algorithms in Python
 
-A sorting algorithm is an algorithm that puts `elements` of a `list` in a certain order.
+A sorting algorithm is an algorithm that puts `items` of a `list` in a certain order.
 
+Adavantages : 
+
+  - Searching for an `item` on a `list` works much faster if the list is sorted. Binary search finds the position of a target `item` within a sorted list in `O(log n)`.
+
+  - Selecting `items` from a `list` based on their relationship to the rest of the `items` is easier with sorted `items`.
+
+  -  Finding duplicate `item` on a `list` can be done very quickly when the `list` is sorted.
+
+ 
 ### Features:
 - `In place`: strictly an `in-place` sort algorithm needs only `O(1)` memory beyond the `items` being sorted. (no needs for extra memory)
 
