@@ -46,7 +46,7 @@ Merge Sort is a divide and conquer algorithm that was invented by John Von Neuma
 
 - Merge sort is often the best choice for sorting a linked list.
 
-`Time Complexity : n log(n)`
+`Time Complexity : O(n log(n))`
 
 1 - Divide the array into two sub arrays recursively.
 
@@ -72,7 +72,7 @@ When implemented well, it can be about two or three times faster than its main c
 
 It was developed by Tony Hoare in 1959.
 
-`Time Complexity : n log(n)`
+`Time Complexity : O(n log(n))`
 
 Not Stable. Does not keep the relative order of items with equal value.
 
