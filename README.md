@@ -83,16 +83,20 @@ Quick Sort gained widespread adoption, appearing, for example, in Unix as the de
 ## Selection sort
 
 The algorithm divides the input list into two parts:
-  - The sub-array of items already sorted.
-  - The sub-array of items remaining to be sorted that occupy the rest of the array.
+  - The `sub-list` of `items` already sorted.
+  - The `sub-list` of `items` remaining to be sorted that occupy the rest of the list.
 
-The algorithm proceeds by finding the smallest element in the unsorted sub-array.
+The algorithm proceeds by finding the `smallest element` in the unsorted `sub-list` and puts it at the beginning of news sorted `sub-list`.
+
+Selection Sort is iterative and goes through an unsorted `sub-list` transforming into a sorted list.
 
 It is an in place algorithm. (no need for extra memory)
 
 Does not preserve the order of keys with equal values. (Not a stable sort)
 
 `Time Complexity : O(n^2)`
+
+`Space Complexity : O(1)`
 
 ## Radix Sort
 

@@ -2,7 +2,7 @@
 def selection_sort(data):
     for i in range(len(data) - 1):
         smallestIdx = i
-        for j in range(i + 1, len(data), 1):
+        for j in range(i + 1, len(data)):
             if data[j] < data[smallestIdx]:
                 smallestIdx = j
         if smallestIdx != i:
