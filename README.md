@@ -30,7 +30,7 @@ For sorting `n` items we have to make `Log(n!)` comparisons. With Stirling's for
 
 Repeatedly steps through the list to be sorted, compare each pair of adjacent items and swaps them if they are in the wrong order.
 
-`Time Complexity : O(nN^2)`
+`Time Complexity : O(n^2)`
 
 Bubble Sort has worst-case and average complexity both `O(n^2)`. It it not a practical sorting algorithm.
 
