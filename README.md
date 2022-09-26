@@ -13,9 +13,9 @@ Adavantages :
 ## Sorting Algorithms Classifications
 Sorting algorithms can generally be classified into three distinct categories:
 
-  - Comparison sorts
-  - Non-comparison sorts
-  - Others
+  - Comparison sorts (Bubble Sort, Quick Sort, Selection)
+  - Non-comparison sorts (Radix Sort, Counting Sort)
+  - Others (Bogosort)
 
 
 ### Features:
