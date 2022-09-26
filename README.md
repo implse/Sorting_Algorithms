@@ -1,40 +1,47 @@
 # Sorting Algorithms in Python
 
-A sorting algorithm is an algorithm that puts `items` of a `list` in a certain order.
+A sorting algorithm puts `items` of a `list` in a certain order.
 
 Adavantages : 
 
-  - Searching for an `item` on a `list` works much faster if the list is sorted. `Binary search` finds the position of a target `item` within a sorted list in `O(log n)`.
+  - Searching for an `item` in a `list` works much faster if the list is sorted. `Binary search` finds the position of a target `item` within a sorted list in `O(log n)`.
 
-  - Selecting `items` from a `list` based on their relationship to the rest of the `items` is easier with sorted `items`.
+  - Searching for an `item` in a `list` based on their relationship to the rest of the `items` is easier when the list is `sorted`.
 
-  -  Finding duplicate `item` on a `list` can be done very quickly when the `list` is sorted.
+  -  Finding duplicate `item` in a `list` can be done very quickly when the `list` is sorted.
 
- 
+## Sorting Algorithms Classifications
+Sorting algorithms can generally be classified into three distinct categories:
+
+  - Comparison sorts
+  - Non-comparison sorts
+  - Others
+
+
 ### Features:
-- `In place`: an `in-place` sort algorithm needs only `O(1)` memory beyond the `items` being sorted. (no needs for extra memory)
+- `In place`: an `in-place` sort algorithm needs only `O(n)` memory. (no needs for extra memory)
 
 - `Recursive`: some sorting algorithms are implemented in a `recursive` manner. (Divide and Conquer)
 
-- `Stable`: stable sorting algorithms maintain the relative order of records with equal values.
+- `Stable`: stable sorting algorithms maintain the relative order of `items` with equal values.
 
 ### Lower Bound
 
 For sorting `n` items we have to make `Log(n!)` comparisons. With Stirling's formula (Stirling's approximation) it can be reduced to `n log(n)`.
 
-- `n log(n)` time complexity is the `lower bound` for comparison based sorting algorithms.
+- The `n log(n)` time complexity is the `lower bound` for comparison based sorting algorithms.
 
-- We can achieve `O(n)` running time as far as sorting is concerned with non comparison based algorithms.(`Bucket Sort` or `Radix Sort`)
+- We can achieve `O(n)` running time with non comparison based algorithms.(`Bucket Sort` or `Radix Sort`)
 
 ## Bubble Sort
 
-Repeatedly steps through the list to be sorted, compare each pair of adjacent items and swaps them if they are in the wrong order.
+Repeatedly steps through the list, compare each pair of adjacent `items` and `swaps` them if they are in the wrong order.
 
 `Time Complexity : O(n^2)`
 
-`Bubble Sort` has worst-case and average complexity both `O(n^2)`. It is not a practical sorting algorithm.
+`Bubble Sort` has worst-case and average complexity in `O(n^2)`. It is not a efficient sorting algorithm.
 
-`Bubble Sort`is an in-place algorithm.
+`Bubble Sort`is an `in-place` algorithm.
 
 ## Merge Sort
 
@@ -42,7 +49,7 @@ Repeatedly steps through the list to be sorted, compare each pair of adjacent it
 
 - Comparison algorithm and stable sorting.
 
-- Not in place algorithm.
+- Not `in-place` algorithm.
 
 - `Merge Sort` is often the best choice for sorting a linked list.
 
