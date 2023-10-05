@@ -2,7 +2,7 @@
 
 A sorting algorithm puts `items` of a `list` in a certain order.
 
-Adavantages : 
+Adavantages of sorting a list: 
 
   - Searching for an `item` in a `list` works much faster if the list is sorted. `Binary search` finds the position of a target `item` within a sorted list in `O(log n)`.
 
@@ -13,21 +13,45 @@ Adavantages :
 ## Sorting Algorithms Classifications
 Sorting algorithms can generally be classified into three distinct categories:
 
-  - Comparison sorts (Bubble Sort, Quick Sort, Selection)
+  - Comparison sorts (Bubble Sort, Quick Sort, Selection Sort)
   - Non-comparison sorts (Radix Sort, Counting Sort)
   - Others (Bogosort)
 
-
 ### Features:
-- `In place`: an `in-place` sort algorithm needs only `O(n)` memory. (no needs for extra memory)
+- `In-place sorting`: an `in-place` sorting algorithm needs only `O(1)` memory. (no needs for extra memory)
 
-- `Recursive`: some sorting algorithms are implemented in a `recursive` manner. (Divide and Conquer)
+- `Recursive sorting`: some sorting algorithms are implemented in a `recursive` manner. (Divide and Conquer)
 
-- `Stable`: stable sorting algorithms maintain the relative order of `items` with equal values.
+- `Stable sorting`: stable sorting algorithms maintain the relative order of `items` with equal values.
+
+Some examples of in-place sorting algorithms:
+
+- Selection sort
+- Insertion sort
+- Bubble sort
+- Heap sort
+
+Some examples of recursive sorting algorithms:
+
+- Merge sort
+- Quicksort
+- Heapsort
+- Timsort
+
+Some examples of stable  sorting algorithms:
+
+- Insertion sort
+- Merge sort
+- Bubble sort
+- Counting sort
+- Radix sort
+- Timsort
+
 
 ### Lower Bound
 
-For sorting `n` items we have to make `Log(n!)` comparisons. With Stirling's formula (Stirling's approximation) it can be reduced to `n log(n)`.
+For sorting `n` items we have to make `Log(n!)` comparisons (the number of comparisons grows very quickly as the number of items increases). With Stirling's formula (Stirling's approximation) it can be reduced to `n log(n)`. This means that the worst-case number of comparisons required to sort n items is approximately n log(n).
+
 
 - The `n log(n)` time complexity is the `lower bound` for comparison based sorting algorithms.
 
@@ -67,7 +91,7 @@ Repeatedly steps through the list, compare each pair of adjacent `items` and `sw
 
 ## Quick Sort
 
-- `Quick Sort` is an efficient sorting algorithm.
+`Quick sort` is the fastest, comparison based sorting algorithm for lists in the average case. When implemented well, it can be about two or three times faster than its main competitors, `Merge Sort` and `Heap Sort`.
 
 - It is a divide and conquer algorithm.
 
@@ -75,7 +99,7 @@ Repeatedly steps through the list, compare each pair of adjacent `items` and `sw
 
 -  It is still a commonly used algorithm for sorting.
 
-When implemented well, it can be about two or three times faster than its main competitors, `Merge Sort` and `Heap Sort`.
+
 
 It was developed by Tony Hoare in 1959.
 
