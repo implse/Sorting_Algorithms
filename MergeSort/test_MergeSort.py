@@ -1,6 +1,6 @@
 import unittest
 import random
-from MergeSort import mergeSort
+from MergeSort import mergeSort, merge
 
 class TestMergeSort(unittest.TestCase):
     def setUp(self):
