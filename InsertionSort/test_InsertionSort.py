@@ -1,6 +1,6 @@
 import unittest
 import random
-from InsertionSort import insertion_Sort
+from InsertionSort import insertion_sort
 
 class TestInsertionSort(unittest.TestCase):
     def setUp(self):
@@ -8,7 +8,7 @@ class TestInsertionSort(unittest.TestCase):
         random.shuffle(self.data_1)
 
     def test_InsertionSort(self):
-        insertion_Sort(self.data_1)
+        insertion_sort(self.data_1)
 
         self.assertEqual(self.data_1[0], 1)
         self.assertEqual(self.data_1[1], 2)
