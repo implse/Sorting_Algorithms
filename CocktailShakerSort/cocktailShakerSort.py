@@ -1,4 +1,4 @@
-# Cocktail Shaker Sort : Tim O(n^2)
+# Cocktail Shaker Sort : Big O(n^2)
 
 def cocktail_shaker(array):
     isSorted = False

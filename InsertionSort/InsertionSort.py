@@ -1,4 +1,4 @@
-# Time Complexity O(n^2) / Space Complexity O(1)
+# Insertion Sort: Time Complexity O(n^2) / Space Complexity O(1)
 
 def insertion_sort(nums):
   for i in range(1, len(nums)):

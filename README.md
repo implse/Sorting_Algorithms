@@ -67,6 +67,19 @@ Repeatedly steps through the list, compare each pair of adjacent `items` and `sw
 
 `Bubble Sort`is an `in-place` algorithm.
 
+## Insertion Sort
+
+
+Insertion sort is a simple sorting algorithm that works by repeatedly inserting an element into the sorted portion of the array at the correct position.
+
+It iterates over the list, finds the correct position forevery element, and inserts it there.
+
+`Time Complexity : O(n^2)`
+
+`Space complexity: O(1)`
+
+`Insertion Sort`is an `in-place` algorithm.
+
 ## Merge Sort
 
 `Merge Sort` is a divide and conquer algorithm that was invented by John Von Neumann in 1945.

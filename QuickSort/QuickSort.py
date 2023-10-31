@@ -1,38 +1,19 @@
- # Quick Sort : Time Complexity O(n log(n)) / Space Complexity O(log(n))
+ # Quick Sort : Time Complexity O(n log(n)) / Space Complexity O(1)
 
-# Main Function
-def quickSort(array):
-	quicksortHelper(array, 0, len(array) - 1)
-	return array
+def quick_sort(nums, low, high):
+	if low < high:
+		split_idx = partition(nums, low, high)
+		quick_sort(nums, low, split_idx - 1)
+		quick_sort(nums, split_idx, high)
+	return None
 
-# Recursive Function
-def quicksortHelper(array, low, high):
-	# Base case
-	if low >= high:
-		return
-	# Pivot
-	pivotIdx = partition(array, low, high)
-	# Recursive call left
-	quicksortHelper(array, low, pivotIdx - 1)
-	# Recursive call right
-	quicksortHelper(array, pivotIdx + 1, high)
-
-# Partition Function : partition the array around the pivot
-def partition(array, low, high):
-	# Choosing a pivot in the middle
-	pivotIdx = (low + high) // 2
-	# Swap pivot with last value in the array
-	swap(array, pivotIdx, high)
+# Partition Function O(n): partition the list and swap values
+def partition(nums, low, high):
+	pivot = nums[high]
 	i = low
 	for j in range(low, high):
-		if array[j] <= array[high]:
-			swap(array, i, j)
+		if nums[j] < pivot:
+			nums[i], nums[j] = nums[j], nums[i]
 			i += 1
-	# Moving the pivot at the right place
-	swap(array, i, high)
-	# Return the pivot index
+	nums[i], nums[high] = nums[high], nums[i]
 	return i
-
-# Swap Function
-def swap(array, i, j):
-	array[i], array[j] = array[j], array[i]
